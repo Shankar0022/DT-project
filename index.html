@@ -3,11 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS PROJECT</title>
+    
 </head>
+
+<style>
+    .navbar {
+    display: flex;
+    background-image: url("https://www.tropicbreeze.co.uk/media/v12bmjdb/hideaway-2bed-beach-villa-pool.jpg?width=960&height=540&v=1db2ea67b5f8cf0");
+    height: 600px;
+    margin: 50px;
+    justify-content: space-around;
+    column-gap: 20px;
+    cursor: pointer;
+}
+.sub-nav1 {
+    display: flex;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+.sub-nav1 > p, div > p {
+    padding-top: 5px;
+}
+.sub-nav2 {
+    display: flex;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+
+.sub-nav2 >div > p {
+    border: 2px solid black;
+    width: 110px;
+    height: 35px;
+     padding: 2px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.sub-nav2 > div > p:hover {
+    background-color: black;
+    color: white;
+
+}
+.hide {
+    display: none;
+    position: absolute;
+    width: 150px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.child-nav {
+    position: relative;
+}
+.child-nav:hover  .hide {
+    display: block;
+}
+.project1 {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.project1 > div > .class1a {
+    border: 2px solid white;
+    display: none;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    z-index: 20;
+    margin-top: -300px;
+    margin-left: 50px;
+}
+.project1 > div:hover .class1a{
+    display: block;
+}
+.project1 > div > img {
+    height: 350px;
+    width: 350px;
+}
+.project1 > div > p {
+    position: absolute;
+    top: 55%;
+    padding-left: 140px;
+    color: white;
+    font-size: 20px;
+    }
+.project1 > div {
+    margin: 20px;
+    margin-top: 100px;
+}
+.project1, .project2, .project3 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.project2 {
+    display: flex;
+}
+.project2 > p{
+    text-align: left;
+
+}
+.project2 > h2 {
+    width: 100%;
+    margin-left: 20px;
+}
+.project3 {
+    margin: 30px;
+    margin-bottom: 150px;
+}
+.project3 > p {
+    margin-left: 585px;
+    background-color: white;
+    height: 50px;
+    width: 130px;
+    border: black 2px solid;
+    padding: 14px;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+.project3 > p:hover {
+    background-color: black;
+    color: white;
+}
+.project4 > img {
+    height: 700px;
+    width: 100%;
+}
+.project4 {
+    position: relative;
+    margin-bottom: 150px;
+}
+.project4 > div {
+       position: absolute;
+    bottom: 0;
+    color: white;
+    top: 40%;
+    left: 30%;
+    text-align: center;
+}
+.project4 > div > h1 {
+    font-size: 50px;
+    font-family: cursive;   
+}
+.project4 > div > p {
+    border: white solid 3px;
+    width: 180px;
+    height: 70px;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.project4 > div > p:hover {
+    background-color: white;
+    color: black;
+}
+.project5 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.project5  > div > a {
+    text-decoration: none;
+    color: black;
+}
+.project6a > img {
+    height: 350px;
+    width: 550px;
+}
+.project6b > img {
+    height: 170px;
+    width: 170px;
+    margin-left: 10px;
+}
+.project6, .project6a , .project6b {
+    display: flex;
+    box-sizing: border-box;
+}
+.project6 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.project6b {
+    flex-wrap: wrap;
+    margin-left: 20px;
+    row-gap: 7px;
+}
+.project7 {
+    background-image: url('https://ik.imgkit.net/3vlqs5axxjf/TW/ik-seo/uploadedImages/Art/2023/1120/T1120HIDEAWAYROYALTON/Hideaway-resort-opens-in-Montego-Bay.jpg?tr=w-780%2Ch-440%2Cfo-auto');
+    margin: 50px;
+    height: 400px;
+}
+.project7 > .center {
+    text-align: center;
+    padding-top: 120px;  
+}
+.project7 > .footer {
+    padding-left: 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.project7 > .footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+.project7 > .center > input {
+    height: 50px;
+    width: 300px;
+}
+.project7 > .footer > .right > a {
+    text-decoration: none;
+    color: white;
+    column-gap: 10px;
+    margin-left: 10px;
+}
+</style>
 <body>
-    <h1> new project file in html </h1>
-    <h1>new project file completed</h1>
-    <h2> create a new priject to develop a app in the html </h2>
+    <div class="navbar">
+        <div class="sub-nav1">
+            <h3>Hideway Resort</h3>
+             <div class="child-nav">
+            <p>Home</p>
+            <div class="hide">
+                <p>slider header</p>
+                <p>slider classic</p>
+                <p>static header</p>
+                <p>static classic</p>
+                <p>youtube background</p>
+                <p>background</p>
+            </div></div>
+            <div class="child-nav">
+            <p>Pages</p>
+            <div class="hide">
+                <p>Gallery</p>
+                <p>Amentics</p>
+                <p>Packages</p>
+                <p>Our History</p>
+            </div></div>
+
+            <p>Contact</p>
+
+            <div class="child-nav"><p>Elements</p>
+            <div class="hide">
+                <p>Buttons</p>
+                <p>Colors</p>
+                <p>Google Maps</p>
+                <p>Grids</p>
+                <p>Icons</p>
+                <p>Layout Helpers</p>
+                <p>Model Video</p>
+                <p>Sliders</p>
+                <p>Top Gallery</p>
+            </div></div>
+        </div>
+        <div class="sub-nav2">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+</svg></div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+  <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+</svg></div>
+            <div><p>Book Now</p></div>
+        </div>
+    </div>
+
+     <div class="project1">
+        <div><img src="https://content.r9cdn.net/rimg/himg/65/80/83/expediav2-358067-3727e5-843747.jpg?width=1200&height=630&crop=true" alt=""><div class="class1a"></div><p>Gallery</p></div>
+        <div><img src="https://media-cdn.holidaycheck.com/w_768,h_432,c_fill,q_auto,f_auto/ugc/images/3ef89197-8d19-34c4-9cf9-83067557fe37" alt=""><div class="class1a"></div><p>Amnetics</p></div>
+        <div><img src="https://images.trvl-media.com/lodging/2000000/1900000/1894500/1894402/895bb251.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" alt=""><div class="class1a"></div><p>Packages</p></div>
+    </div>
+
+    <div class="project2">
+        <h2>An inviting escape</h2>
+        <p>Crafted with Bootstrap 4, Hideaway is perfectly responsive to every devices available. Thousands of CSS helper classes let you customize
+             this template in any way you want, without writing any code. This is a dummy text that you can change customize as you
+              like with your description.</p>
+    </div>
+    <div class="project3">
+        <p>Our History</p>
+    </div>
+
+    <div class="project4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2S7HFAWUgHM60vQrMiQ8Es0ShvoAZE5O-DA&s" alt="">
+        <div>
+        <h1>Eagerly waiting to welcome you.</h1>
+        <p>Book Your Stay</p>
+        </div>
+
+        </div><br>
+
+    <div class="project5">
+        <p>123 Fake Street, Stone Ridge, NY 12345</p>
+        <div><a href="">Instagram / </a><a href="">Facebook / </a><a href="">Twitter</a></div>
+    </div>
+
+    <div class="project6">
+        <div class="project6a">
+            <img src="https://sunnseaholidaysmed.com/filer_public/filer_public/filer_public/Hideaway/hideaway-maldives_meeru-bar-pool.jpg" alt="">
+        </div>
+        <div class="project6b">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/b6/ed/69/weekend-island-camp.jpg?w=600&h=400&s=1">
+            <img src="https://pix10.agoda.net/hotelImages/60209/0/9f21ac965e9e91f729f8aaa1955ab2f4.jpeg?ce=0&s=414x232" alt="">
+            <img src="https://www.tropicbreeze.co.uk/media/rkjdcgng/hideaway-sunset-beach-residence-pool.jpeg?width=960&height=540&v=1db2ea67d60b420" alt="">
+            <img src="https://www.angelfish.travel/images/highres/99_640_ONEBEDROOMFAMILYVILLAWITHPOOL6.webp" alt="">
+            <img src="https://gos3.ibcdn.com/78abdfcd-e9b7-4de1-8fc2-ac78a848e460.jpg" alt="">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/05/0f/87/bf/camp-hideaway.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="project7">
+        <div class="center">
+        <h3>Join the Hideaway Newsletters</h3>
+
+         <p>Subscribe to our mailing list to receive updates and promotional offers.</p>
+        <input type="text" placeholder="Enter Your Name">
+        <input type="submit" style="height: 50px; width: 100px;"></div>
+        <div class="footer">
+            <p>© DestinyRoad 2025 | Template crafted by <a href="">Chaithan_Reddy</a></p>
+        
+            <div class="right">
+                <a href="">Home</a>
+                <a href="">Book Now</a>
+                <a href="">Contact</a>
+                <a href="">Events</a>
+                <a href="">Policies</a>
+                <a href="">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
